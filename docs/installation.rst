@@ -26,7 +26,7 @@ you through the process.
 From sources
 ------------
 
-The sources for kaapana-utility-scripts can be downloaded from the `Github repo`_.
+The sources for kaapana-utility-scripts can be downloaded from the `GitHub repo`_.
 
 You can either clone the public repository:
 
@@ -47,5 +47,5 @@ Once you have a copy of the source, you can install it with:
     $ python setup.py install
 
 
-.. _Github repo: https://github.com/vkt1414/kaapana_utility_scripts
+.. _GitHub repo: https://github.com/vkt1414/kaapana_utility_scripts
 .. _tarball: https://github.com/vkt1414/kaapana_utility_scripts/tarball/master

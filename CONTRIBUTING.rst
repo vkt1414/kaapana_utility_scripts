@@ -57,9 +57,9 @@ If you are proposing a feature:
 Get Started!
 ------------
 
-Ready to contribute? Here's how to set up `kaapana_utility_scripts` for local development.
+Ready to contribute? Here's how to set up ``kaapana_utility_scripts`` for local development.
 
-1. Fork the `kaapana_utility_scripts` repo on GitHub.
+1. Fork the ``kaapana_utility_scripts`` repo on GitHub.
 2. Clone your fork locally::
 
     $ git clone git@github.com:your_name_here/kaapana_utility_scripts.git
