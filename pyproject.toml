@@ -1,0 +1,63 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kaapana_utility_scripts"
+version = "0.0.1"
+description = "Utility scripts to help deloy kaapana on Google Cloud"
+readme = "README.rst"
+authors = [
+  {name = "Vamsi Thiriveedhi", email = "vthiriveedhi@mgh.harvard.edu"}
+]
+maintainers = [
+  {name = "Vamsi Thiriveedhi", email = "vthiriveedhi@mgh.harvard.edu"}
+]
+classifiers = [
+
+]
+license = {text = "MIT license"}
+dependencies = [
+  "typer"
+]
+
+[project.optional-dependencies]
+dev = [
+    "coverage",  # testing
+    "mypy",  # linting
+    "pytest",  # testing
+    "ruff"  # linting
+]
+
+[project.urls]
+
+bugs = "https://github.com/vkt1414/kaapana_utility_scripts/issues"
+changelog = "https://github.com/vkt1414/kaapana_utility_scripts/blob/master/changelog.md"
+homepage = "https://github.com/vkt1414/kaapana_utility_scripts"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.package-data]
+"*" = ["*.*"]
+
+
+
+
+# Mypy
+# ----
+
+[tool.mypy]
+files = "."
+
+# Use strict defaults
+strict = true
+warn_unreachable = true
+warn_no_return = true
+
+[[tool.mypy.overrides]]
+# Don't require test functions to include types
+module = "tests.*"
+allow_untyped_defs = true
+disable_error_code = "attr-defined"
+
